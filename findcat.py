@@ -26,8 +26,10 @@ if catGPSData[3] == 'W':
     lonDec = -lonDec
 
 print("lat: ",latDec)
+print("lon: ",lonDec)
 
 print(latDec," , ",lonDec)
+
 locString=str(latDec)+','+str(lonDec)
 mapURL = 'https://www.google.com/maps/place/' + locString
 webbrowser.open(mapURL)
